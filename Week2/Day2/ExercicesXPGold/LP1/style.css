@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&family=Outfit&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+header {
+  background-color: #32676d;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+main {
+  background-color: #7cb9b4;
+
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+form {
+  display: grid;
+  grid-template-areas:
+    "a b c"
+    "d e f"
+    "g g g"
+    "h h h"
+    "i i i"
+    "j j j";
+  grid-gap: 20px 10px;
+  padding: 0 25%;
+}
+
+#section1 {
+  grid-area: a;
+}
+#section2 {
+  grid-area: b;
+}
+#section3 {
+  grid-area: c;
+}
+#section4 {
+  grid-area: d;
+}
+#section5 {
+  grid-area: e;
+}
+#section6 {
+  grid-area: f;
+}
+#section7 {
+  grid-area: g;
+}
+#section8 {
+  grid-area: h;
+}
+#section9 {
+  grid-area: i;
+  display: flex;
+  gap: 10px;
+}
+
+input:not(#subscrive),
+select {
+  width: 100%;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+}
+
+span {
+  color: #00a1d8;
+}
+
+label,
+h2,
+ul {
+  font-size: 0.8rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 6px 0;
+}
+
+li::before {
+  content: "- ";
+}
+
+button {
+  color: white;
+  background-color: #00a1d8;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+}
+
+#btnBot {
+  grid-area: j;
+  width: 30%;
+  margin: 20px auto;
+}
+
+img {
+  width: 70px;
+
+  align-self: end;
+  margin-right: 20px;
+  background: linear-gradient(#ff9674, #fdbd77) padding-box,
+    linear-gradient(to right, #ff9674, #fdbd77) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+}
+
+@media screen and (max-width: 900px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label,
+  h2,
+  ul {
+    font-size: 0.6rem;
+  }
+
+  #btnBot {
+    width: 70%;
+  }
+}

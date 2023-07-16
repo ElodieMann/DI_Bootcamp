@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-auto-rows: minmax(50px, 1fr);
+  gap: 4px;
+}
+
+.grey1 {
+  background-color: rgb(224, 220, 220);
+}
+.grey2 {
+  background-color: rgb(89, 87, 87);
+}
+.grey3 {
+  background-color: rgb(57, 56, 56);
+}
+.black {
+  background-color: black;
+}

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Outfit", sans-serif;
+height: 100vh;
+  color: rgb(147 145 145);
+
+}
+
+.section-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  gap: 15px;
+  width: 50%;
+  padding: 25px 15px 10px;
+}
+
+h1 {
+  text-transform: capitalize;
+  color: black;
+  letter-spacing: 3px;
+
+}
+
+input {
+  background-color: #eeeeee;
+  border: none;
+  padding: 8px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: rgb(157, 39, 176);
+  color: white;
+}
+
+.flex {
+  display: flex;
+  font-size: 0.5rem;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.flex div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+input[type="checkbox"] {
+  width: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(147 145 145);
+}
+
+a:hover {
+    color: rgb(157, 39, 176);
+}
+
+.line-before-after {
+  position: relative;
+  display: inline-block;
+  font-size: 0.7rem;
+
+}
+
+.line-before-after::before,
+.line-before-after::after {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  width: 50%;
+  height: 1px;
+  background-color: rgba(147, 145, 145, 0.39);; 
+
+}
+
+.line-before-after::before {
+  right: 100%; 
+  margin-right: 10px; 
+}
+
+.line-before-after::after {
+  left: 100%; 
+  margin-left: 10px; 
+}
+
+.icon {
+    display: flex;
+    gap: 15px;
+}
+
+.fa-brands {
+    font-size: 13px;
+}
+
+.cop {
+    display: flex;
+    font-size: 0.5rem;
+    margin-top: 25px;
+}
+
+.section-right {
+      background-image: linear-gradient(#21212C, #9727AB);
+       display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ color: white;
+
+  width: 50%;
+
+}
+
+.title {
+    color: white;
+    text-transform: none;
+}
+
+.fa-solid {
+    font-size: 3.5rem;
+}
+
+.text {
+    font-size: 0.7rem;
+    padding: 0 15px;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 50%;
+    border-radius: 15px;
+    color: white;
+    padding: 4px;
+    margin-top: 10px;
+}

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+nav,
+footer {
+  background-color: black;
+  padding: 10px;
+  color: white;
+}
+
+i{ 
+position: absolute;
+  left: 10px;
+}
+
+.menu {
+  right: 10px;
+  top: 10px;
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
+
+.gap {
+  height: 80vh;
+  text-align: center;
+  padding: 100px;
+  
+}
+
+.foot {
+  color: white;
+  text-align: right;
+  right: 10px;
+}

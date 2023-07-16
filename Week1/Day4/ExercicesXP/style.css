@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+section-left {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  background-color: #6c999a;
+  padding: 25px;
+  position: absolute;
+  top: 0;
+  left: 5%;
+  color: white;
+  font-size: 0.8rem;
+  z-index: 1;
+}
+
+img {
+    width: 45%;
+    border-radius: 59%;
+    border: 2px solid white;
+    margin: 0 auto;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+h2 {
+  color: #ebcbbb;
+  text-decoration: underline;
+  margin: 30px auto;
+}
+
+a {
+  color: white;
+  display: flex;
+  text-decoration: none;
+  gap: 15px;
+
+}
+
+hr {
+  margin: 8px 0;
+  border: 2px solid white;
+  border-radius: 5px;
+  
+}
+
+.hebrew {
+    width: 90%;
+}
+.english {
+    width: 80%;
+}
+
+
+section-right {
+    position: relative;
+}
+
+.work, .education {
+    margin-left: 40%;
+}
+
+.name {
+    background-color: #ebcbbb;
+    width: 100vw;
+    margin: 50px 0;
+    padding: 5% 40%;
+
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.symbol {
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #6c999a;
+    margin: 40px 0;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 20px;
+    
+}
+
+span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+li {
+    margin-left: 20px;
+}
