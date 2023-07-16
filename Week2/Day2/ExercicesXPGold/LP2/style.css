@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --blue1:#195475;
+  --blue2:#2794d1;
+  --greyNav: #a7b4bf;
+}
+
 body {
   text-transform: capitalize;
   color: #777879;
@@ -21,20 +27,20 @@ nav,
 
 nav {
   justify-content: space-between;
-  border-bottom: 1px solid #195475;
+  border-bottom: 1px solid var(--blue1);
   padding: 15px 4px;
-  color: #a7b4bf;
+  color: var(--greyNav);
 }
 
 i {
   font-size: 2.5rem;
-  color: #195475;
+  color: var(--blue1);
 }
 
 .logo {
   font-size: 1.5rem;
   gap: 5px;
-  color: rgb(25, 84, 117);
+  color: var(--blue1);
 }
 
 #navSpan {
@@ -64,14 +70,14 @@ i {
 
 .fa-magnifying-glass {
   font-size: 15px;
-  color: #a7b4bf;
+  color: var(--greyNav);
 }
 
 #btn-nav,
 select {
-  border: 2px solid #2794d1;
+  border: 2px solid var( --blue2);
   border-radius: 4px;
-  color: #2794d1;
+  color: var( --blue2);
   background-color: white;
   font-weight: bold;
   padding: 3px;
@@ -123,7 +129,7 @@ h1 {
 
 .popular {
   height: 25px;
-  background-color: #2794d1;
+  background-color: var( --blue2);
   color: white;
   text-transform: uppercase;
   display: flex;
@@ -193,7 +199,7 @@ button {
 }
 
 .bottom-container {
-  background-color: #195475;
+  background-color: var(--blue1);
   color: white;
   padding: 10px;
   display: flex;
@@ -223,7 +229,7 @@ button {
   font-size: 1rem;
   gap: 5px;
   color: white;
-  background-color: #2794d1;
+  background-color: var( --blue2);
   border-radius: 6px 6px 0 0;
   padding: 10px;
   margin-right: 4px;
