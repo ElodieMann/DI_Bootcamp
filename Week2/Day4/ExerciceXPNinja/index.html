@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .small-hr {
+            height: 1px;
+            width: 50px;
+            background-color: gray;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div style="background: grey no-repeat center / cover; height: 100vh">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid d-flex justify-content-center">
+                <a class="navbar-brand text-white" href="#">
+                    Intense <span class="text-success">job search</span>
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white border-bottom border-success" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Find a job</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Post a job</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-6">or</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
+            <h1 class="mb-4 text-white">Build Your Future</h1>
+            <h5 class="mb-4 text-white">
+                We offer <span class="text-success">2.989</span> job vacancies right now!
+            </h5>
+            <form class="row g-3">
+                <div class="col-md-4 mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="job, company..."
+                    />
+                </div>
+                <div class="col-md-4 mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="city or state"
+                    />
+                </div>
+                <div class="col-md-4 mb-3 d-flex justify-content-center">
+                    <button type="submit" class="btn btn-success">FIND JOB</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-success">
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                <div class="border-end border-white p-4 text-center">
+                    <i class="fa-light fa-notes-medical text-white"></i>
+                    <h3 class="text-white">Healthcare</h3>
+                    <i class="fa-solid fa-arrow-right text-white"></i>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                <div class="border-end border-white p-4 text-center">
+                    <i class="fa-solid fa-car text-white"></i>
+                    <h3 class="text-white">Automobile Jobs</h3>
+                    <i class="fa-solid fa-arrow-right text-white"></i>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                <div class="border-end border-white p-4 text-center">
+                    <i class="fa-regular fa-building text-white"></i>
+                    <h3 class="text-white">Construction</h3>
+                    <i class="fa-solid fa-arrow-right text-white"></i>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                <div class="border-end border-white p-4 text-center">
+                    <i class="fa-solid fa-pan-food text-white"></i>
+                    <h3 class="text-white">Food Services</h3>
+                    <i class="fa-solid fa-arrow-right text-white"></i>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                <div class="border-end border-white p-4 text-center">
+                    <i class="fa-solid fa-earth-asia text-white"></i>
+                    <h3 class="text-white">Logistics</h3>
+                    <i class="fa-solid fa-arrow-right text-white"></i>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                <div class="p-4 text-center">
+                    <i class="fa-regular fa-ticket text-white"></i>
+                    <h3 class="text-white">Finance</h3>
+                    <i class="fa-solid fa-arrow-right text-white"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container d-flex flex-column justify-content-center align-items-center my-5">
+        <h2 class="text-black">Latest Jobs</h2>
+        <hr class="small-hr">
+        <table class="table table-borderless text-gray">
+            <thead>
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Company</th>
+                    <th scope="col">Job Vacancy</th>
+                    <th scope="col">City</th>
+                    <th scope="col">Salary</th>
+                    <th scope="col">Employment</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>July 1, 2023</td>
+                    <td><i class="fa-brands fa-drupal"></i></td>
+                    <td>Developer</td>
+                    <td>NY</td>
+                    <td>$80,000</td>
+                    <td>FT</td>
+                </tr>
+                <tr>
+                    <td>July 5, 2023</td>
+                    <td><i class="fa-brands fa-drupal"></i></td>
+                    <td>Project Manager</td>
+                    <td>San Diego</td>
+                    <td>$100,000</td>
+                    <td>FT</td>
+                </tr>
+                <tr>
+                    <td>July 10, 2023</td>
+                    <td><i class="fa-brands fa-drupal"></i></td>
+                    <td>Track</td>
+                    <td>Tulum</td>
+                    <td>$70,000</td>
+                    <td>PT</td>
+                </tr>
+                <tr>
+                    <td>July 15, 2023</td>
+                    <td><i class="fa-brands fa-drupal"></i></td>
+                    <td>JS Programmer</td>
+                    <td>Seattle</td>
+                    <td>$90,000</td>
+                    <td>FT</td>
+                </tr>
+                <tr>
+                    <td>July 20, 2023</td>
+                    <td><i class="fa-brands fa-drupal"></i></td>
+                    <td>Developer</td>
+                    <td>San Francisco</td>
+                    <td>$85,000</td>
+                    <td>PT</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn btn-success text-white">View All</button>
+    </section>
+
+    <footer class="bg-light">
+        <div class="container py-5">
+            <h2 class="text-center">Why People Choose Us</h2>
+            <hr class="small-hr mx-auto">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4 text-center">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="fas fa-user-check fa-3x text-success"></i>
+                        <h3 class="text-uppercase">Verified Employers</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 text-center">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="fas fa-chart-bar fa-3x"></i>
+                        <h3 class="font-weight-bold">Demanded Vacancies</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 text-center">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="far fa-calendar-alt fa-3x"></i>
+                        <h3>Employment Blog</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+
+    <script src="https://kit.fontawesome.com/4db01f5c44.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
