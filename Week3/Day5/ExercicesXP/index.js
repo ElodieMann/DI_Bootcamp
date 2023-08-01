@@ -122,10 +122,11 @@ for (let i in details) {
 
 // Exercice 7
 const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
-let sort = names.sort()
-let secret ='';
-for (let i = 0; i < sort.length; i++) {
-    secret += sort[i][0];
+
+let secret = [];
+for (let i = 0; i < names.length; i++) {
+    secret.push(names[i][0]) ;
 }
 
-console.log(secret);
+let str = secret.sort().join('')
+console.log(str);
