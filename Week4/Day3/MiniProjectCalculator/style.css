@@ -1,0 +1,14 @@
+input {
+    height: 50px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.number {
+    background-color: green;
+    color: white;
+}
+.operator {
+    background-color: orange;
+    color: white;
+}
