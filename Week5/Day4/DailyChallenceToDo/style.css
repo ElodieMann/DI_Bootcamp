@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+ background-color: pink;
+
+ text-align: center;
+}
+
+form {
+    background: white;
+    width: 40%;
+    margin: 0 auto;
+}
+
+input {
+    border: none;
+}
+
+input[type="submit"] {
+    background: none;
+    color: blue;
+}
+
+.listTasks {
+    background-color: white;
+    margin: 0 auto;
+    width: 40%;
+  
+}
+
+.button {
+    background-color: pink;
+    padding: 3px;
+}
+
+.div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+    padding: 20px;
+
+    gap: 10px;
+}

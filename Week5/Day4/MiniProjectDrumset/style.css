@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./festival.jpg) no-repeat center / cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    border: 1px solid yellow;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000066;
+    height: 100px;
+    width: 100px;
+}
+
+.box:hover {
+transform: scale(1.1);
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: yellow;
+}

@@ -1,0 +1,116 @@
+body {
+padding: 4px;
+background-color: grey;
+display: flex;
+height: 100vh;
+width: 100vw;
+}
+
+.leftSection {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button {
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    border-radius: 14%;
+    border: 1px solid black;
+}
+
+.colorContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 4px;
+    height: 70%;
+}
+
+.colorContainer div {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
+
+#color1 {
+    background-color: red;
+}
+#color2 {
+    background-color: white;
+}
+#color3 {
+    background-color: bisque;
+}
+#color4 {
+    background-color: black;
+}
+#color5 {
+    background-color:blue;
+}
+#color6 {
+    background-color: brown;
+}
+#color7 {
+    background-color: green;
+}
+#color8 {
+    background-color: grey;
+}
+#color9 {
+    background-color: gold;
+}
+#color10 {
+    background-color: darkcyan;
+}
+#color11 {
+    background-color: darkorchid;
+}
+#color12 {
+    background-color: orange;
+}
+#color13 {
+    background-color: orchid;
+}
+#color14 {
+    background-color: palegreen;
+}
+#color15 {
+    background-color: purple;
+}
+#color16 {
+    background-color: peru;
+}
+#color17 {
+    background-color: hotpink;
+}
+#color18 {
+    background-color:firebrick ;
+}
+#color19 {
+    background-color: coral;
+}
+#color20 {
+    background-color: deeppink;
+}
+#color21 {
+    background-color: forestgreen;
+}
+
+#rightSection {
+    display: grid;
+    width: 60%;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    gap: 2px;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.colorable {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
