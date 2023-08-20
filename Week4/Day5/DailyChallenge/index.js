@@ -48,9 +48,8 @@ for (const planet in moons) {
     divMoon.style.backgroundColor = `rgb(${Math.floor(
       Math.random() * 255
     )},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)})`;
-    divMoon.style.transform = `translate(${Math.floor(
-      Math.random() * 200
-    )}px, ${Math.floor(Math.random() * 200)}px)`;
+    divMoon.style.right = `-${(i + 1) * 40}px`
+    divMoon.style.top = `40px`
    
     div.appendChild(divMoon);
   }
