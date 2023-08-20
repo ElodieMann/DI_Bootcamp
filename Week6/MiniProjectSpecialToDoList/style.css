@@ -1,0 +1,8 @@
+.toggle {
+    display: none; 
+  }
+  
+  .active {
+    display: block;
+  }
+
