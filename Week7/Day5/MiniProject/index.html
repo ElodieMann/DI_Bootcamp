@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="generate">Generate Quote</button>
+    <section></section>
+<div class="buttons" style="display: flex;">
+<button id="charWithSpace">number of character (space included)</button>
+<button id="charWithoutSpace">number of character(space NOT included)</button>
+<button id="words">number of words</button>
+<button id="like">Like</button>
+<h1></h1>
+</div>
+
+
+    <h2>Add a new quote</h2>
+    <form action="">
+        <label for="quote">Quote</label>
+        <input type="text" id="quote">
+        <label for="author">Author</label>
+        <input type="text" id="author">
+        <input type="submit" id="newQuote" value="Send">
+    </form>
+
+<form action="">
+    <input type="text" id="authorOfQuotes">
+    <input type="submit" id="authorBtn" value="Send">
+    <div id="displayQuotes"></div>
+    <button id="previous">Previous</button>
+    <button id="next">Next</button>
+</form>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
