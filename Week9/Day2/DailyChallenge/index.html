@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" id="name">
+        <input type="text" id="lastname">
+        <input type="submit" value="Send">
+    </form>
+    <section></section>
+    <script>
+        let form = document.querySelector('form')
+        let name = document.getElementById('name')
+        let lastname = document.getElementById('lastname')
+        let section = document.querySelector('section')
+        form.addEventListener('submit', addJsonObject)
+        function addJsonObject(e) {
+            e.preventDefault()
+            let data = {
+                name: name.value,
+                lastname: lastname.value
+            }
+            dataJson = JSON.stringify(data)
+            section.textContent = dataJson
+        }
+    </script>
+</body>
+
+</html>
