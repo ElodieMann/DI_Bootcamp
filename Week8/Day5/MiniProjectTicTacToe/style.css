@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: blue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-size: 4rem;
+}
+
+.level,
+.crossOrRound {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.crossOrRound {
+  visibility: hidden;
+}
+
+button {
+  height: 30px;
+  width: 60px;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  padding: 20px;
+  visibility: hidden;
+}
+
+.tr {
+  display: flex;
+}
+td {
+  height: 100px;
+  width: 100px;
+  border: 1px solid white;
+}
+
+#reset {
+  visibility: hidden;
+}
