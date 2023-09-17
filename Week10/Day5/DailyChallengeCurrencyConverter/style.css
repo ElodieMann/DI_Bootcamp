@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./téléchargement.jpeg) no-repeat center / cover;
+    height: 100vh;
+    color: white;
+    text-transform: capitalize;
+}
+
+section {
+    height: 80vh;
+    background-color: rgba(128, 128, 128, 0.539);
+    width: 80vw;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40vh;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.fontText {
+    font-size: 2rem;
+}
+
+#resultAmount{
+    width: 40%;
+    height: 35px;
+    background-color: white;
+    color: black;
+}
+
