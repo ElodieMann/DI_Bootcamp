@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <% include('../partials/head.ejs') %>
+</head>
+
+<body>
+    <% rssData.forEach(post => { %>
+        <h1><%= post.title %></h1>
+        <a href="<%= post.link %>"> <%= post.link %></a>
+    <% }) %>
+    
+    <div></div>
+    
+    <% include('../partials/header.ejs') %>
+    <% include('../partials/posts.ejs') %>
+    <% include('../partials/footer.ejs') %>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="" method="post">
+    <label for="username">Username : </label>
+    <input type="text" name="username" id="username">
+    <label for="password">Passeword : </label>
+    <input type="password" name="password" id="password">
+    <input type="submit" value="Send">
+</form>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.querySelector('form');
+
+    loginForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const username = document.querySelector('#username').value;
+        const password = document.querySelector('#password').value;
+
+        try {
+            const response = await fetch('http://localhost:3000/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username, password }),
+            });
+
+            if (response.ok) {
+              alert(`Hello ${username}`)
+            } else {
+                alert('User not found')
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

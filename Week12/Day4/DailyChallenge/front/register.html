@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Register</h1>
+    <form action="" method="post">
+        <label for="email">Email : </label>
+        <input type="email" name="email" id="email">
+
+        <label for="username">Username : </label>
+        <input type="text" name="username" id="username">
+
+        <label for="firstname">Firstname : </label>
+        <input type="text" name="firstname" id="firstname">
+
+        <label for="name">Name : </label>
+        <input type="name" name="name" id="name">
+
+        <label for="password">Password : </label>
+        <input type="password" name="password" id="password">
+
+        <input type="submit" value="Send">
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const registerForm = document.querySelector('form');
+console.log(registerForm);
+            registerForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+
+                const email = document.querySelector('#email').value;
+                const username = document.querySelector('#username').value;
+                const first_name = document.querySelector('#firstname').value;
+                const last_name = document.querySelector('#name').value;
+                const password = document.querySelector('#password').value;
+
+                try {
+                    const response = await fetch('http://localhost:3000/register', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ email, username, first_name, last_name, password }),
+                    });
+
+                    if (response.ok) {
+                       alert('ok')
+                    } else {
+alert('no')
+                    }
+                } catch (error) {
+                    console.log(error);
+        }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

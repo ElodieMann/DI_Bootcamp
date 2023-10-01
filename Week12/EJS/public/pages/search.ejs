@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <% include('../partials/head.ejs') %>
+</head>
+<body>
+    <% include('../partials/header.ejs') %>
+
+    <% if (typeof rssData !== 'undefined' && rssData.length > 0) { %>
+        <div>
+            <% rssData.forEach(post => { %>
+                <h1><%= post.title %></h1>
+                <a href="<%= post.link %>"> <%= post.link %></a>
+
+            <% }) %>
+        </div>
+    <% } else { %>
+        <form action="/search/title" method="post">
+            <h1>Search a post by title</h1>
+            <input type="text" id="title" name="title" placeholder="Choose a title">
+            <input type="submit">
+        </form>
+
+        <form action="/search/category" method="post">
+            <h1>Search a post by category</h1>
+            <input type="text" id="category" name="category" placeholder="Choose a category">
+            <input type="submit">
+        </form>
+    <% } %>
+
+    <% include('../partials/footer.ejs') %>
+</body>
+</html>
