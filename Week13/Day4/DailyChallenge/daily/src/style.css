@@ -1,0 +1,16 @@
+tr {
+    background-color: pink;
+}
+
+td {
+    padding: 40px;
+    
+}
+
+button {
+    border: none;
+    background-color: pink;
+    margin-top: 40px;
+    color: green;
+    font-size: 30px;
+}

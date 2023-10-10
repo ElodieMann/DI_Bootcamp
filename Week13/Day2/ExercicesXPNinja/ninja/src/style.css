@@ -1,0 +1,71 @@
+.header {
+    background-color: orangered;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 20px;
+}
+
+.values {
+    background-color: grey;
+}
+
+
+.formSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
+
+.form {
+    display: flex;
+    gap: 30px;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rightForm {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    justify-content: center;
+}
+
+
+.icon {
+    width: 100%;
+    height: 100px;
+    color: orangered;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+input[type='submit'] {
+    background-color: orangered;
+    color: wheat;
+    border: none;
+}
+
+@media screen and (max-width: 692px) {
+    .section, .form {
+      flex-direction: column;
+    }
+  }

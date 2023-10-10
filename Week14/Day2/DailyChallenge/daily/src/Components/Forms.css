@@ -1,0 +1,11 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    gap: 10px;
+    background-color: pink;
+}
+
+h1 {
+    background-color: grey;
+}
