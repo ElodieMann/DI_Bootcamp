@@ -1,4 +1,3 @@
-//controllers.js
 const models = require("../models/models");
 const bcrypt = require("bcrypt");
 

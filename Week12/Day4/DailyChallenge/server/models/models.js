@@ -1,4 +1,3 @@
-// models.js
 const db = require("../config/knex");
 const bcrypt = require("bcrypt");
 
