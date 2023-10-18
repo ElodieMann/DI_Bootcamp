@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import TodosList from "../component/TodosList";
 import TodoForm from "../component/TodoForm";
+import { getTodos, addTodo, deleteTodo } from "../todos/todo";
+import { useDispatch } from "react-redux";
 
 const TodosPage = () => {
-  const [todos, setTodos] = useState([]);
+  const dispatch = useDispatch();
   const [input, setInput] = useState({
     title: "",
     content: "",
@@ -26,7 +28,9 @@ const TodosPage = () => {
   const fetchTodos = async () => {
     try {
       const response = await axios.get("http://localhost:3000/");
-      setTodos(response.data);
+      if (response) {
+        dispatch(getTodos(response.data));
+      }
       console.log(response);
     } catch (error) {
       console.log(error);
@@ -36,12 +40,14 @@ const TodosPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3000/", input);
-      setInput({
-        title: "",
-        content: "",
-      });
-      fetchTodos();
+      const res = await axios.post("http://localhost:3000/", input);
+      if (res.status < 399) {
+        dispatch(addTodo(input));
+        setInput({
+          title: "",
+          content: "",
+        });
+      }
     } catch (error) {
       console.log(error);
     }
@@ -49,8 +55,10 @@ const TodosPage = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/${id}`);
-      fetchTodos();
+      const res = await axios.delete(`http://localhost:3000/${id}`);
+      if (res) {
+        dispatch(deleteTodo(id));
+      }
     } catch (error) {
       console.log(error);
     }
@@ -58,8 +66,12 @@ const TodosPage = () => {
 
   return (
     <div>
-      <TodoForm handleSubmit={handleSubmit} handleInput={handleInput} input={input} />
-      <TodosList todos={todos} handleDelete={handleDelete} />
+      <TodoForm
+        handleSubmit={handleSubmit}
+        handleInput={handleInput}
+        input={input}
+      />
+      <TodosList  handleDelete={handleDelete} />
     </div>
   );
 };
