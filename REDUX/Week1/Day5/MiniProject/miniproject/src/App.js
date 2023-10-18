@@ -8,7 +8,13 @@ function App() {
   return (
     <div className="App">
       <h1>Snap Shot</h1>
-      <Form />
+      <BrowserRouter>
+        <Form />
+        <Buttons />
+        <Routes>
+          <Route path="/:category" element={<Gallery />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,26 +1,32 @@
 import React, { useEffect, useState } from "react";
 import { createClient } from "pexels";
+import { useParams } from "react-router-dom";
 
-const Gallery = ({ name }) => {
-  const [category, setCategory] = useState([]);
+const Gallery = () => {
+  const { category } = useParams();
+  const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
+    getPictures();
+  }, [category]);
+
+  const getPictures = () => {
     const client = createClient(
       "4s0OFxoSLytjxZtkzHR6Qp08PC37qUBLyTB35rEZCbpe0ff9QxjC7PrL"
     );
 
     client.photos
-      .search({ query: name, per_page: 30 })
-      .then((photos) => setCategory(photos.photos))
+      .search({ query: category, per_page: 30 })
+      .then((photos) => setPhotos(photos.photos))
       .catch((e) => console.log(e));
-  }, [name]);
+  };
 
   return (
     <div>
-      <h2>{name}</h2>
+      <h2>{category} Pictures</h2>
       <div className="pictures">
-        {category?.map((photos) => (
-          <img key={photos.id} src={photos.src.tiny} alt={photos.alt} />
+        {photos?.map((photo) => (
+          <img key={photo.id} src={photo.src.tiny} alt={photo.url} />
         ))}
       </div>
     </div>

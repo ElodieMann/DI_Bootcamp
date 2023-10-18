@@ -1,11 +1,14 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
-const Buttons = ({ setName }) => {
-  const btns = ["Mountain", "Beaches", "Birds", "Food"];
+const Buttons = () => {
+  const btns = ["mountain", "beaches", "birds", "food"];
   return (
     <div className="btnContainer">
       {btns.map((btn) => (
-        <button onClick={() => setName(btn)}>{btn}</button>
+        <Link key={btn} to={`/${btn}`}>
+          <button>{btn}</button>
+        </Link>
       ))}
     </div>
   );
