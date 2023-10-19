@@ -30,7 +30,6 @@ const SearchForm = ({ searchMovie }) => {
 };
 
 const mapStateToProps = (state) => ({
-  // map state to props if needed
 });
 
 export default connect(mapStateToProps, { searchMovie })(SearchForm);

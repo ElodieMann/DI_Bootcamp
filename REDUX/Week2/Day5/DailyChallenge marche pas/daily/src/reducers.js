@@ -1,3 +1,4 @@
+//reducers.js
 import { combineReducers } from 'redux';
 
 const initialState = {

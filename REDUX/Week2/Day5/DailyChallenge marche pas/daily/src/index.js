@@ -3,8 +3,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import store from './store'; // Replace './store' with the path to your Redux store configuration
-import App from './App'; // Replace './App' with the path to your App component
+import store from './store';  
+import App from './App';  
 
 ReactDOM.render(
   <Provider store={store}>
