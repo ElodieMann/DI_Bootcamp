@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.App {
+  text-align: center;
+  background-color: rgb(226, 106, 8);
+  padding: 10px;
+
+}
+
+h4 {
+  padding: 10px;
+}
+
+.main {
+  background-color: white;
+  padding: 15px;
+}
+
+.data {
+  background-color: rgb(5, 5, 57);
+  padding: 30px;
+}
+
+input[type="text"] {
+  border: none ;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(226, 106, 8);
+  margin-right: 15px;
+  font-size: 25px;
+  color: white;
+}
+
+input[type="submit"] {
+  color: white;
+  background-color: rgb(226, 106, 8);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  
+}
+
+span { 
+  color: rgb(226, 106, 8);
+}
+
+p {
+  color: white;
+  border-bottom: 1px solid grey;
+  padding: 10px;
+}
